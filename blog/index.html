@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <script src="https://kit.fontawesome.com/09c4097ac1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <ul class="m-header-ul">
+    <li class="close-menu">&times;</li>
+    <li class="header-li"><a class="header-li-a" href="#home"> HOME</a></li>
+    <li class="header-li"><a class="header-li-a" href="#about"> about us</a></li>
+    <li class="header-li"><a class="header-li-a" href="#services"> services</a></li>
+    <li class="header-li"><a class="header-li-a" href="#portfolio">portfolio</a></li>
+    <li class="header-li"><a class="header-li-a" href="#blog"> blog</a></li>
+    <li class="header-li"><a class="header-li-a" href="#features"> contact us</a></li>
+  </ul>
+  <section class="stn__1">
+    <div class="container">
+      <header class="header">
+        <div class="row header-row">
+          <div class="col-md-6 col-xs-6 "><a href="#" class="logo">akad.</a></div>
+          <div class="col-md-6 col-xs-6 bur-menu">
+            <a href="#" class="m-menu-link">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="row stn__1-row">
+        <div class="col-md-12 col-xs-12">
+          <div class="main-name">Blog posts</div>
+          </div>
+          </div>
+       </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+         integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+       <script>
+         $(function () {
+           var link = $('.m-menu-link');
+           var close = $('.close-menu');
+           var menu = $('.m-header-ul');
+           var mLinkCl = $('.header-li-a');
+           link.on('click', function (event) {
+             event.preventDefault();
+             menu.toggleClass('m-menu__active');
+
+           });
+           mLinkCl.on('click', function (event) {
+             menu.toggleClass('m-menu__active')
+           });
+           close.on('click', function (event) {
+             event.preventDefault();
+             menu.toggleClass('m-menu__active')
+           });
+         });
+       </script>
+</body>
+</html>
