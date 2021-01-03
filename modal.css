@@ -1,0 +1,117 @@
+.modal-sub-btn-close {
+  transform: translate(95%, -50%);
+}
+
+.fa-times-circle {
+  color: #9a9a9a;
+}
+
+.fa-times-circle:hover {
+  color: #7beec7;
+}
+
+
+.modal-sub-show {
+  display: block;
+}
+
+.modal-sub-hide {
+  display: none;
+}
+
+.modal-sub-h3 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #3a454d;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #7beec7;
+}
+
+.modal-sub-txt {
+  width: 85%;
+  margin: 10px 0;
+  padding: 7px 10px;
+  border: 1px solid #cdcdcd;
+}
+
+.modal-sub-txt::placeholder {
+  color: #cdcdcd;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+.modal-sub-btn {
+  transform-style: preserve-3d;
+  transition: all 800ms ease;
+  width: 60%;
+  height: 30px;
+  background-color: #7beec7;
+  border: none;
+  margin-left: 0;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+
+}
+
+.modal-sub-btn:after {
+  top: -100%;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  color: #7beec7;
+  padding: 0.5px 0;
+  position: absolute;
+  background-color: #000000;
+  border-radius: 5px;
+  content: 'Subscribe';
+  transform-origin: left bottom;
+  transform: rotateX(90deg);
+  line-height: 2.4;
+  height: 30px;
+}
+
+.modal-sub-btn:hover {
+  transform-origin: center bottom;
+  transform: rotateX(-90deg) translateY(100%);
+}
+
+.modal-sub-btn:hover {
+  background-color: #3a454d;
+}
+
+.modal-sub {
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 42%;
+  padding-right:37%;
+}
+
+.sub {
+  width: 300px;
+  height: 280px;
+  padding: 25px;
+  background: white;
+  position: fixed;
+  /* margin: 15% 42%; */
+
+}
+
+.wrap-form-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

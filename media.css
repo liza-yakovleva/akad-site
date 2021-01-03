@@ -42,7 +42,7 @@ border: 7px solid #60606e;
   width: 180px;
 }
 .stn__4-form-btn {
-  width: 80px;
+  width: 75px;
 }
 .footer-menu { 
   display: none;
@@ -58,7 +58,7 @@ border: 7px solid #60606e;
   margin-bottom: 10px;
 }
 .stn__3 {
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 40px;
 }
 .stn__3-name {
@@ -187,8 +187,62 @@ display: block;
 .footer-txt-ico {
   margin-top: 10px;
 }
-.after-txt::after { 
-  margin-left: 45px;
-}
 
 }
+
+@media screen and (max-width: 425px) {
+  .stn__2 {
+    padding-bottom: 0px;
+  }
+
+  .stn__3 {
+    padding-top: 0px;
+  }
+}
+
+
+
+
+
+@media(max-width:1024px) {
+ .modal-sub {
+
+   padding: 15% 35.6%;
+
+}
+}
+@media(max-width:768px) {
+  .modal-sub {
+
+    padding: 25% 30.4%;
+
+  }
+}
+@media(max-width:425px) {
+  .modal-sub {
+
+    padding: 35% 14.6%;
+
+  }
+}
+@media(max-width:375px) {
+  .modal-sub {
+
+    padding: 35% 9.9%;
+
+  }
+}
+@media(max-width:320px) {
+  .modal-sub {
+
+    padding: 45% 3%;
+
+  }
+}
+
+
+
+
+
+
+

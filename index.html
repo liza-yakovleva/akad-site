@@ -7,30 +7,79 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:wght@300;400;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="slider.css">
   <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="modal.css">
   <script src="https://kit.fontawesome.com/09c4097ac1.js" crossorigin="anonymous"></script>
+  <script>
+    document.documentElement.className = "js";
+    var supportsCssVars = function () {
+      var e, t = document.createElement("style");
+      return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS
+        .supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+    };
+    supportsCssVars() || alert("Please view this slider in a modern browser that supports CSS Variables.");
+  </script>
 </head>
 <body>
-  <ul class="m-header-ul">
-    <li class="close-menu">&times;</li>
-    <li class="header-li"><a class="header-li-a" href="#"> HOME</a></li>
-    <li class="header-li"><a class="header-li-a" href="about/about.html"> about us</a></li>
-    <li class="header-li"><a class="header-li-a" href="services/services.html"> services</a></li>
-    <li class="header-li"><a class="header-li-a" href="blog/blog.html"> blog</a></li>
-    <li class="header-li"><a class="header-li-a" href="features/features.html"> contact us</a></li>
-  </ul>
+
+  <form action="app.php" method="post" class="modal-sub modal-sub-hide">
+    <div class="animate__animated sub">
+      <div class="modal-sub-btn-close"><i class="far fa-times-circle"></i></div>
+      <div class="wrap-form-cont">
+      <h3 class="modal-sub-h3">Subscribe to us</h3>
+      <input type="text" class="modal-sub-txt" placeholder="Your Name">
+      <input type="email" class="modal-sub-txt em" placeholder="Your email">
+      <button class="modal-sub-btn">Subscribe</button>
+      </div>
+    </div>
+  </form>
+ 
    <section class="stn__1">
      <div class="container">
        <header class="header">
        <div class="row header-row">
-         <div class="col-md-6 col-xs-6 "><a href="#" class="logo">akad.</a></div>
-         <div class="col-md-6 col-xs-6 bur-menu">
-           <a href="#" class="m-menu-link">
-             <i class="fa fa-bars"></i>
-           </a>
+         <div class="col-md-6 col-xs-6 box-logo">
+            <svg viewBox="20 20 800 600">
+              <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="35%" class="text-line">
+                  acad.
+                </text>
+              </symbol>
+              <g class="g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+              </g>
+            </svg>
+          
+        </div>
+         <div class="col-md-6 col-xs-6 menu">
+           <ul class="navigation hidden-menu">
+
+             <li class="header-li"><a class="header-li-a" href="#">HOME</a></li>
+             <li class="header-li"><a class="header-li-a" href="about/about.html">about us</a></li>
+             <li class="header-li"><a class="header-li-a" href="services/services.html">services</a></li>
+             <li class="header-li"><a class="header-li-a" href="blog/blog.html">blog</a></li>
+             <li class="header-li"><a class="header-li-a" href="contact/contact.html">contact us</a></li>
+             
+           </ul>
+           <div class="nav-mobile-menu">
+             <span></span>
+             <span></span>
+             <span></span>
+           </div>
          </div>
        </div>
        </header>
@@ -133,6 +182,122 @@
  </div>
 </div>
   </section>
+
+
+<section class="stn-1-5" id="stn-1-5">
+  <div class="container">
+    <div class="row">
+      <div class="demo-1">
+
+        <div class="col-md-12 col-xs-12">
+          <main>
+            <!-- <div class="content content--fixed">
+      </div> -->
+            <div class="content">
+              <!-- Pieces Slider -->
+              <div class="pieces-slider">
+                <!-- Each slide with corresponding image and text -->
+                 <div class="pieces-slider__slide">
+                   <img class="pieces-slider__image" src="img/11.jpg" alt="">
+                   <h2 class="pieces-slider__text">Bottle Sparks</h2>
+                 </div>
+                <div class="pieces-slider__slide">
+                  <img class="pieces-slider__image" src="img/1.jpg" alt="">
+                  <h2 class="pieces-slider__text">Coffee Break</h2>
+                </div>
+               
+                <div class="pieces-slider__slide">
+                  <img class="pieces-slider__image" src="img/15.jpg" alt="">
+                  <h2 class="pieces-slider__text">Reach for the stars</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                  <img class="pieces-slider__image" src="img/4.jpg" alt="">
+                  <h2 class="pieces-slider__text">Green Flight</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                  <img class="pieces-slider__image" src="img/14.jpg" alt="">
+                  <h2 class="pieces-slider__text">Natural</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                  <img class="pieces-slider__image" src="img/16.jpg" alt="">
+                  <h2 class="pieces-slider__text">Minimal</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                  <img class="pieces-slider__image" src="img/2.jpg" alt="">
+                  <h2 class="pieces-slider__text">Green Tea</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                  <img class="pieces-slider__image" src="img/17.jpg" alt="">
+                  <h2 class="pieces-slider__text">Choice</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                  <img class="pieces-slider__image" src="img/8.jpg" alt="">
+                  <h2 class="pieces-slider__text">Education</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                  <img class="pieces-slider__image" src="img/9.jpg" alt="">
+                  <h2 class="pieces-slider__text">Inscription</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                  <img class="pieces-slider__image" src="img/18.jpg" alt="">
+                  <h2 class="pieces-slider__text">Different</h2>
+                </div>
+               
+                <div class="pieces-slider__slide">
+                  <img class="pieces-slider__image" src="img/12.jpg" alt="">
+                  <h2 class="pieces-slider__text">Greenish</h2>
+                </div>
+                <div class="pieces-slider__slide">
+                  <img class="pieces-slider__image" src="img/19.jpg" alt="">
+                  <h2 class="pieces-slider__text">Young</h2>
+                </div>
+                 <div class="pieces-slider__slide">
+                   <img class="pieces-slider__image" src="img/20.jpg" alt="">
+                   <h2 class="pieces-slider__text">In the sky</h2>
+                 </div>
+                  <div class="pieces-slider__slide">
+                    <img class="pieces-slider__image" src="img/21.jpg" alt="">
+                    <h2 class="pieces-slider__text">Art</h2>
+                  </div>
+                   <div class="pieces-slider__slide">
+                     <img class="pieces-slider__image" src="img/22.jpg" alt="">
+                     <h2 class="pieces-slider__text">Alone</h2>
+                   </div>
+                    <div class="pieces-slider__slide">
+                      <img class="pieces-slider__image" src="img/23.jpg" alt="">
+                      <h2 class="pieces-slider__text">Creation</h2>
+                    </div>
+                     <div class="pieces-slider__slide">
+                       <img class="pieces-slider__image" src="img/24.jpg" alt="">
+                       <h2 class="pieces-slider__text">Pink mood</h2>
+                     </div>
+                      <div class="pieces-slider__slide">
+                        <img class="pieces-slider__image" src="img/25.jpg" alt="">
+                        <h2 class="pieces-slider__text">Winter's tale</h2>
+                      </div>
+                <!-- Canvas to draw the pieces -->
+                <canvas class="pieces-slider__canvas"></canvas>
+                <!-- Slider buttons: prev and next -->
+                <button class="pieces-slider__button pieces-slider__button--prev"><div class="arrow-left"></div></button>
+                <button class="pieces-slider__button pieces-slider__button--next">
+                  <div class="arrow-right"></div>
+                </button>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
   <section class="stn__3">
 <div class="container">
   <div class="row stn__3-row">
@@ -158,21 +323,86 @@
   <li>advertising</li>
 </ul>
     </div>
-    <div class=" col-md-9 col-xs-12 wrap-stn__3">
-    <div class=" stn__3-content">
-<img src="img/col-1-img1.png" alt="img" class="stn__3-img">
-<img src="img/col-1-img2.png" alt="img" class="stn__3-img">
-<img src="img/col-1-img3.png" alt="img" class="stn__3-img">
+    <div class="col-md-9 col-xs-12 wrap-stn__3">
+    <div class="stn__3-content">
+      <div class="stn__3-img">
+        <div class="portrait" id="portrait">
+        <div class="fill col1-img1"></div>
+        <div class="fill z-10 hover">
+          <div class="fill col1-img1 hover-img"></div>
+        </div>
+        </div>
+      </div>
+       <div class="stn__3-img">
+         <div class="portrait" id="portrait1">
+           <div class="fill col1-img2"></div>
+           <div class="fill z-10 hover">
+             <div class="fill col1-img2 hover-img"></div>
+           </div>
+         </div>
+       </div>
+        <div class="stn__3-img">
+          <div class="portrait" id="portrait2">
+            <div class="fill col1-img3"></div>
+            <div class="fill z-10 hover">
+              <div class="fill col1-img3 hover-img"></div>
+            </div>
+          </div>
+        </div>
+     
     </div>
     <div class="stn__3-content">
-<img src="img/col-2-img1.png" alt="img" class="stn__3-img">
-<img src="img/col-2-img2.png" alt="img" class="stn__3-img">
-<img src="img/col-2-img3.png" alt="img" class="stn__3-img">
+       <div class="stn__3-img">
+         <div class="portrait" id="portrait3">
+           <div class="fill col1-img4"></div>
+           <div class="fill z-10 hover">
+             <div class="fill col1-img4 hover-img"></div>
+           </div>
+         </div>
+       </div>
+        <div class="stn__3-img">
+          <div class="portrait" id="portrait4">
+            <div class="fill col1-img5"></div>
+            <div class="fill z-10 hover">
+              <div class="fill col1-img5 hover-img"></div>
+            </div>
+          </div>
+        </div>
+         <div class="stn__3-img">
+           <div class="portrait" id="portrait5">
+             <div class="fill col1-img6"></div>
+             <div class="fill z-10 hover">
+               <div class="fill col1-img6 hover-img"></div>
+             </div>
+           </div>
+         </div>
+
     </div>
     <div class=" stn__3-content">
-<img src="img/col-3-img1.png" alt="img" class="stn__3-img">
-<img src="img/col-3-img2.png" alt="img" class="stn__3-img">
-<img src="img/col-3-img3.png" alt="img" class="stn__3-img">
+      <div class="stn__3-img">
+        <div class="portrait" id="portrait6">
+          <div class="fill col1-img7"></div>
+          <div class="fill z-10 hover">
+            <div class="fill col1-img7 hover-img"></div>
+          </div>
+        </div>
+      </div>
+      <div class="stn__3-img">
+        <div class="portrait" id="portrait7">
+          <div class="fill col1-img8"></div>
+          <div class="fill z-10 hover">
+            <div class="fill col1-img8 hover-img"></div>
+          </div>
+        </div>
+      </div>
+      <div class="stn__3-img">
+        <div class="portrait" id="portrait8">
+          <div class="fill col1-img9"></div>
+          <div class="fill z-10 hover">
+            <div class="fill col1-img9 hover-img"></div>
+          </div>
+        </div>
+      </div>
     </div>
     </div>
   </div>
@@ -191,7 +421,7 @@
         <div class="form-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua.</div>
          <input type="email" name="" id="" placeholder="your email" class="stn__4-email">
-          <input type="button" value="send" class="stn__4-form-btn">
+          <button class="stn__4-form-btn">send</button>
       </form>
     </div>
   </div>
@@ -200,15 +430,14 @@
 <footer class="footer">
 <div class="container">
   <div class="row ftr-row">
-    <div class="col-md-7 col-xs-12 ">
+    <div class="col-md-7 col-xs-12">
       <ul class="footer-menu">
-        <li class="footer-li">
-          <a href="#" class="after-txt">Home</a>
-        </li>
-        <li class="footer-li"><a href="about/about.html" class="after-txt">about us</a></li>
-        <li class="footer-li"><a href="services/services.html" class="after-txt">services</a></li>
-        <li class="footer-li"><a href="blog/blog.html" class="after-txt">blog</a></li>
-        <li class="footer-li"><a href="contact/contact.html">contact us</a></li>
+        <li class="footer-li"><a href="#" class="a-effect"><span>Home</span></a></li>
+        <li class="footer-li"><a href="about/about.html" class="a-effect"><span class="a-effect-span">about
+              us</span></a></li>
+        <li class="footer-li"><a href="services/services.html" class="a-effect"><span>services</span></a></li>
+        <li class="footer-li"><a href="blog/blog.html" class="a-effect"><span>blog</span></a></li>
+        <li class="footer-li"><a href="contact/contact.html" class="a-effect"><span>contact us</span></a></li>
       </ul>
     </div>
     <div class="col-md-5 col-xs-12 footer-txt-ico">
@@ -247,27 +476,15 @@
 
 
 
+
+<script src="menu.js"></script>
+<script src='js/anime.min.js'></script>
+<script src='js/pieces.min.js'></script>
+<script src='js/demo.js'></script>
+<script src="img-effect.js"></script>
+<script src="modal.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script>
-    $(function () {
-      var link = $('.m-menu-link');
-      var close = $('.close-menu');
-      var menu = $('.m-header-ul');
-      var mLinkCl= $('.header-li-a');
-      link.on('click', function (event) {
-        event.preventDefault();
-        menu.toggleClass('m-menu__active');
 
-      });
-      mLinkCl.on('click', function (event) {
-      menu.toggleClass('m-menu__active')
-      });
-      close.on('click', function (event) {
-        event.preventDefault();
-        menu.toggleClass('m-menu__active')
-      });
-    });
-  </script>
 </body>
 </html>

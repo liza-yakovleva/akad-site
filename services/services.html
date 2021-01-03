@@ -13,27 +13,61 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="../menu.css">
+   <link rel="stylesheet" href="../modal.css">
   <script src="https://kit.fontawesome.com/09c4097ac1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <ul class="m-header-ul">
-    <li class="close-menu">&times;</li>
-    <li class="header-li"><a class="header-li-a" href="../"> HOME</a></li>
-    <li class="header-li"><a class="header-li-a" href="../about/about.html"> about us</a></li>
-    <li class="header-li"><a class="header-li-a" href="#"> services</a></li>
-    <li class="header-li"><a class="header-li-a" href="../blog/blog.html"> blog</a></li>
-    <li class="header-li"><a class="header-li-a" href="../contact/contact.html"> contact us</a></li>
-  </ul>
+
+   <form action="app.php" method="post" class="modal-sub modal-sub-hide">
+     <div class="animate__animated sub">
+       <div class="modal-sub-btn-close"><i class="far fa-times-circle"></i></div>
+       <div class="wrap-form-cont">
+         <h3 class="modal-sub-h3">Subscribe to us</h3>
+         <input type="text" class="modal-sub-txt" placeholder="Your Name">
+         <input type="email" class="modal-sub-txt" placeholder="Your email">
+         <button class="modal-sub-btn">Subscribe</button>
+       </div>
+     </div>
+   </form>
+
   <section class="stn__1">
     <div class="container">
       <header class="header">
         <div class="row header-row">
-          <div class="col-md-6 col-xs-6 "><a href="#" class="logo">akad.</a></div>
-          <div class="col-md-6 col-xs-6 bur-menu">
-            <a href="#" class="m-menu-link">
-              <i class="fa fa-bars"></i>
-            </a>
+           <div class="col-md-6 col-xs-6 box-logo">
+             <svg viewBox="20 20 800 600">
+               <symbol id="s-text">
+                 <text text-anchor="middle" x="50%" y="35%" class="text-line">
+                   acad.
+                 </text>
+               </symbol>
+               <g class="g-ants">
+                 <use xlink:href="#s-text" class="text-copy"></use>
+                 <use xlink:href="#s-text" class="text-copy"></use>
+                 <use xlink:href="#s-text" class="text-copy"></use>
+                 <use xlink:href="#s-text" class="text-copy"></use>
+                 <use xlink:href="#s-text" class="text-copy"></use>
+               </g>
+             </svg>
+
+           </div>
+          <div class="col-md-6 col-xs-6 menu">
+            <ul class="navigation hidden-menu">
+
+              <li class="header-li"><a class="header-li-a" href="../">HOME</a></li>
+              <li class="header-li"><a class="header-li-a" href="../about/about.html">about us</a></li>
+              <li class="header-li"><a class="header-li-a" href="#">services</a></li>
+              <li class="header-li"><a class="header-li-a" href="../blog/blog.html">blog</a></li>
+              <li class="header-li"><a class="header-li-a" href="../contact/contact.html">contact us</a></li>
+
+            </ul>
+            <div class="nav-mobile-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </header>
@@ -42,6 +76,7 @@
           <div class="main-name">our services</div>
           <div class="main-link">
             <a class="frst-link" href="../">home</a>
+            <span>/</span>
             <a href="#">services</a>
           </div>
         </div>
@@ -172,7 +207,7 @@
           <div class="card">
             <div class="triangle-topright"></div>
             <div class="card-name">BASIC </div>
-            <button class="card-btn1">$35.99 Monthly</button>
+            <button class="card-btn1 card-btn1-text1">$35.99 Monthly</button>
             <ul class="stn-3-ul">
                <li><input type="checkbox" name="" class="stn__2-checkbox" id="text11">
                  <label for="text11" class="stn__2-label">Lorem ipsum dolor sit amet</label></li>
@@ -192,7 +227,7 @@
           <div class="card">
              <div class="triangle-topright"></div>
             <div class="card-name">ADVANCED </div>
-            <button class="card-btn1">$55.99 Monthly</button>
+            <button class="card-btn1 card-btn1-text2">$55.99 Monthly</button>
             <ul class="stn-3-ul">
               <li><input type="checkbox" name="" class="stn__2-checkbox" id="text17">
                 <label for="text17" class="stn__2-label">Lorem ipsum dolor sit amet</label></li>
@@ -212,7 +247,7 @@
           <div class="card">
              <div class="triangle-topright"></div>
             <div class="card-name">smart </div>
-            <button class="card-btn1">$75.99 Monthly</button>
+            <button class="card-btn1 card-btn1-text3">$75.99 Monthly</button>
             <ul class="stn-3-ul">
               <li><input type="checkbox" name="" class="stn__2-checkbox" id="text23">
                 <label for="text23" class="stn__2-label">Lorem ipsum dolor sit amet</label></li>
@@ -254,7 +289,7 @@
               incididunt
               ut labore et dolore magna aliqua.</div>
             <input type="email" name="" id="" placeholder="your email" class="stn__7-email">
-            <input type="button" value="send" class="stn__7-form-btn">
+             <button class="stn__7-form-btn">send</button>
           </form>
         </div>
       </div>
@@ -265,13 +300,11 @@
       <div class="row ftr-row">
         <div class="col-md-7 col-xs-12 ">
           <ul class="footer-menu">
-            <li class="footer-li">
-              <a href="../" class="after-txt">Home</a>
-            </li>
-            <li class="footer-li"><a href="../about/about.html" class="after-txt">about us</a></li>
-            <li class="footer-li"><a href="#" class="after-txt">services</a></li>
-            <li class="footer-li"><a href="../blog/blog.html" class="after-txt">blog</a></li>
-            <li class="footer-li"><a href="../contact/contact.html">contact us</a></li>
+            <li class="footer-li"><a href="../" class="a-effect"><span>Home</span></a></li>
+            <li class="footer-li"><a href="../about/about.html" class="a-effect"><span class="a-effect-span">about us</span></a></li>
+            <li class="footer-li"><a href="#" class="a-effect"><span>services</span></a></li>
+            <li class="footer-li"><a href="../blog/blog.html" class="a-effect"><span>blog</span></a></li>
+            <li class="footer-li"><a href="../contact/contact.html" class="a-effect"><span>contact us</span></a></li>
           </ul>
         </div>
         <div class="col-md-5 col-xs-12 footer-txt-ico">
@@ -306,30 +339,11 @@
 
 
 
-  <script src="./script.js"></script>
-
+  <script src="../modal.js"></script>
+<script src="../menu.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script>
-    $(function () {
-      var link = $('.m-menu-link');
-      var close = $('.close-menu');
-      var menu = $('.m-header-ul');
-      var mLinkCl = $('.header-li-a');
-      link.on('click', function (event) {
-        event.preventDefault();
-        menu.toggleClass('m-menu__active');
-
-      });
-      mLinkCl.on('click', function (event) {
-        menu.toggleClass('m-menu__active')
-      });
-      close.on('click', function (event) {
-        event.preventDefault();
-        menu.toggleClass('m-menu__active')
-      });
-    });
-  </script>
+  
 </body>
 
 </html>

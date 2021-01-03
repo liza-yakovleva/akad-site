@@ -4,6 +4,9 @@
   }
 
 }
+@media(max-width:360px) {
+
+}
 @media(max-width:768px) { 
   .stn__7-form {
     width: 300px;
@@ -69,7 +72,13 @@
   .stn-2-list-with {
     margin: 0;
   }
-  
+  .card {
+    width: 280px;
+  }
+
+  .triangle-topright {
+    transform: translate(236px, -2px);
+  }
 }
 @media(min-width:992px) {
   .container {
