@@ -202,43 +202,67 @@ display: block;
 
 
 
-
-
-@media(max-width:1024px) {
- .modal-sub {
-
-   padding: 15% 35.6%;
-
-}
-}
-@media(max-width:768px) {
+@media(min-width:1024px) {
   .modal-sub {
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-left: 42%;
+    padding-right: 40%;
+    /* padding: 15% 35.6%; */
 
-    padding: 25% 30.4%;
+  }
+}
+
+ @media(max-width:1024px) {
+ .modal-sub {
+ padding-top: 15%;
+ padding-bottom: 15%;
+ padding-left: 35.6%;
+ padding-right:34.8%;
+   /* padding: 15% 35.6%; */
+
+}
+} 
+ @media(max-width:768px) {
+  .modal-sub {
+padding-top: 25%;
+padding-bottom: 25%;
+padding-left: 30.5%;
+padding-right: 30%;
+    /* padding: 25% 30.4%; */
 
   }
 }
 @media(max-width:425px) {
   .modal-sub {
-
-    padding: 35% 14.6%;
+padding-top: 45%;
+padding-bottom: 35%;
+padding-left: 14.8%; 
+ padding-right:14.3%; 
+    /* padding: 35% 14.6%; */
 
   }
 }
 @media(max-width:375px) {
   .modal-sub {
-
-    padding: 35% 9.9%;
+padding-top: 45%;
+padding-bottom: 35%;
+padding-left: 10%;
+padding-right:9.4%;
+    /* padding: 35% 9.9%; */
 
   }
 }
 @media(max-width:320px) {
   .modal-sub {
-
-    padding: 45% 3%;
+padding-top: 45%;
+padding-bottom: 45%;
+padding-left: 3%; 
+padding-right: 2.2%;
+     /* padding: 45% 3%;  */
 
   }
-}
+} 
 
 
 

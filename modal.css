@@ -94,10 +94,10 @@
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
   z-index: 100;
-  padding-top: 15%;
+  /* padding-top: 15%;
   padding-bottom: 15%;
   padding-left: 42%;
-  padding-right:37%;
+  padding-right:37%;  */
 }
 
 .sub {
