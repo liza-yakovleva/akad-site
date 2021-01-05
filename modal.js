@@ -28,7 +28,7 @@ function openModalSub() {
 
 // function showModalByScroll() {
 //   if (window.pageYOffset > document.documentElement.scrollHeight / 2) {
-    setTimeout(openModalSub, 3000);
+    setTimeout(openModalSub, 30000);
       
 //     window.removeEventListener("scroll", showModalByScroll);
 //   }

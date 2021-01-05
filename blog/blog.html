@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog</title>
   <link rel="stylesheet" href="reset.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:wght@300;400;600;700&display=swap"
@@ -20,7 +21,7 @@
 
 
   <section class="stn__1">
-    <div class="container">
+    <div data-aos="flip-up" class="container">
       <header class="header">
         <div class="row header-row">
          <div class="col-md-6 col-xs-6 box-logo">
@@ -71,7 +72,7 @@
     </div>
   </section>
   <section class="stn__2">
-    <div class="container">
+    <div data-aos="flip-up" class="container">
       <div class="row stn__2-row">
         <div class="col-md-8 col-xs-12 stn__2-main-content">
           <div class="bl-publication">
@@ -290,7 +291,7 @@
     </div>
   </section>
  <section class="stn__7">
-   <div class="container">
+   <div data-aos="flip-up" class="container">
      <div class="row stn__7-row">
        <div class="col-md-6 col-xs-12 stn__7-content stn__7-con1">
          <div class="stn__7-name">YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</div>
@@ -309,7 +310,7 @@
      </div>
    </div>
  </section>
- <footer class="footer">
+ <footer data-aos="flip-up" class="footer">
    <div class="container">
      <div class="row ftr-row">
         <div class="col-md-7 col-xs-12 footer-menu-wrap">
@@ -360,7 +361,10 @@
 
 
 
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="../menu.js"></script>
 <script src="tab.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
