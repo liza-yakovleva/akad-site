@@ -224,7 +224,42 @@ text-decoration: none;
 }
 .blog-content-img {
   width: 100%;
+  height: 100%;
+}
+.img-wrapper {
+  width: 100%;
   height: 60%;
+  overflow: hidden;
+}
+.inner-img {
+  transition: 0.3s;
+}
+
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* .footer-ico{
+animation: rotating 4s linear infinite;
+} */
+.inner-img:hover {
+  transform: scale(1.1);
+  
+}
+
+.inner-img1 {
+  transition: 0.8s;
+
+}
+
+.inner-img1:hover {
+  transform: scale(1.2) rotate(360deg);
+
 }
 
 
