@@ -61,14 +61,20 @@
   }
   .stn__3-cont {
    flex-direction: column;
-   flex-wrap: nowrap;
+   /* flex-wrap: nowrap; */
+   
   }
 
   .stn__3-box-wrap {
     flex-direction: row;
-    justify-content:center;
+    
     flex-wrap: wrap;
    align-content: space-between;
+  }
+  .stn__3-box {
+display: flex;
+flex-direction: column;
+align-items: center;
   }
   .stn__6-box-wrap {
     flex-wrap: wrap;
